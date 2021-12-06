@@ -1,0 +1,233 @@
+.PanoVreoTag {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity 0.45s;
+}
+.PanoVreoTag--visible {
+  opacity: 1;
+}
+.PanoVreoTag--inner {
+  transform: translate(-50%, -50%);
+}
+.PanoVreoTag-icon {
+  display: inline-block;
+  width: 12px;
+  height: 10px;
+  margin-right: 2px;
+}
+
+.PanoVreoTag-icon--play {
+  background: url(//vrlab-static.ljcdn.com/release/web/triangle.2deb3f89.svg) center/contain no-repeat;
+}
+
+@keyframes keyframes-explain-wave {
+  0% {
+    width: 23.333333333333332px;
+    height: 33.333333333333336px;
+    background-image: url('//vrlab-public.ljcdn.com/release/web/proof-wave.a7bdac27.png');
+    background-size: 980px 33.333333333333336px;
+  }
+
+  2.38% {
+    background-position: -23.333333333333332px 0;
+  }
+
+  4.76% {
+    background-position: -46.666666666666664px 0;
+  }
+
+  7.14% {
+    background-position: -70px 0;
+  }
+
+  9.52% {
+    background-position: -93.33333333333333px 0;
+  }
+
+  11.90% {
+    background-position: -116.66666666666667px 0;
+  }
+
+  14.29% {
+    background-position: -140px 0;
+  }
+
+  16.67% {
+    background-position: -163.33333333333334px 0;
+  }
+
+  19.05% {
+    background-position: -186.66666666666666px 0;
+  }
+
+  21.43% {
+    background-position: -210px 0;
+  }
+
+  23.81% {
+    background-position: -233.33333333333334px 0;
+  }
+
+  26.19% {
+    background-position: -256.6666666666667px 0;
+  }
+
+  28.57% {
+    background-position: -280px 0;
+  }
+
+  30.95% {
+    background-position: -303.3333333333333px 0;
+  }
+
+  33.33% {
+    background-position: -326.6666666666667px 0;
+  }
+
+  35.71% {
+    background-position: -350px 0;
+  }
+
+  38.10% {
+    background-position: -373.3333333333333px 0;
+  }
+
+  40.48% {
+    background-position: -396.6666666666667px 0;
+  }
+
+  42.86% {
+    background-position: -420px 0;
+  }
+
+  45.24% {
+    background-position: -443.3333333333333px 0;
+  }
+
+  47.62% {
+    background-position: -466.6666666666667px 0;
+  }
+
+  50.00% {
+    background-position: -490px 0;
+  }
+
+  52.38% {
+    background-position: -513.3333333333334px 0;
+  }
+
+  54.76% {
+    background-position: -536.6666666666666px 0;
+  }
+
+  57.14% {
+    background-position: -560px 0;
+  }
+
+  59.52% {
+    background-position: -583.3333333333334px 0;
+  }
+
+  61.90% {
+    background-position: -606.6666666666666px 0;
+  }
+
+  64.29% {
+    background-position: -630px 0;
+  }
+
+  66.67% {
+    background-position: -653.3333333333334px 0;
+  }
+
+  69.05% {
+    background-position: -676.6666666666666px 0;
+  }
+
+  71.43% {
+    background-position: -700px 0;
+  }
+
+  73.81% {
+    background-position: -723.3333333333334px 0;
+  }
+
+  76.19% {
+    background-position: -746.6666666666666px 0;
+  }
+
+  78.57% {
+    background-position: -770px 0;
+  }
+
+  80.95% {
+    background-position: -793.3333333333334px 0;
+  }
+
+  83.33% {
+    background-position: -816.6666666666666px 0;
+  }
+
+  85.71% {
+    background-position: -840px 0;
+  }
+
+  88.10% {
+    background-position: -863.3333333333334px 0;
+  }
+
+  90.48% {
+    background-position: -886.6666666666666px 0;
+  }
+
+  92.86% {
+    background-position: -910px 0;
+  }
+
+  95.24% {
+    background-position: -933.3333333333334px 0;
+  }
+
+  97.62%,
+  100% {
+    background-position: -956.6666666666666px 0;
+  }
+}
+
+.PanoVreoTag-wave {
+  content: '';
+  width: 23.333333333333332px;
+  height: 33.333333333333336px;
+  background-image: url(//vrlab-public.ljcdn.com/release/web/proof-wave.a7bdac27.png);
+  background-size: 980px 33.333333333333336px;
+  background-repeat: no-repeat;
+  -webkit-animation-name: keyframes-explain-wave;
+  animation-name: keyframes-explain-wave;
+  -webkit-animation-duration: 1.68s;
+  animation-duration: 1.68s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: steps(1);
+  animation-timing-function: steps(1);
+  position: absolute;
+  top: -9px;
+}
+.PanoVreoTag-wave--left {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: -23px;
+}
+
+.PanoVreoTag-wave--right {
+  right: -25px;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@realsee/vreo-vite-scaffold",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "PUBLIC_URL='.' tsc && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@realsee/five": "^5.0.0-alpha.59",
+    "@realsee/vreo": "^0.1.3",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "three": "^0.117.1"
+  },
+  "devDependencies": {
+    "@realsee/dnalogel": "^0.1.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react": "^1.0.0",
+    "babel-polyfill": "^6.26.0",
+    "normalize.css": "^8.0.1",
+    "styled-jsx": "^3.4.6",
+    "typescript": "^4.3.2",
+    "vite": "^2.6.4"
+  }
+}

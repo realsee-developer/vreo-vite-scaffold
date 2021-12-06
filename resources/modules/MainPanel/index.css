@@ -1,0 +1,91 @@
+.main-panel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 93px;
+  width: 100%;
+  background: url('//vrlab-static.ljcdn.com/release/web/main-panel-realsee.6700068c.png') center/100% 100% no-repeat;
+  transform: translate(0, 100%);
+  transition: transform 0.45s;
+}
+
+.main-panel-wrapper--visible {
+  transform: translate(0, 0);
+}
+
+.main-panel-content {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  width: 100vw;
+  max-width: 343px;
+}
+
+.main-panel-left {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 42px;
+  height: 42px;
+}
+
+.user-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-left: 6px;
+}
+
+.user-info-pos {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.user-info-txt {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.main-panel-right {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  font-size: 10px;
+  color: white;
+}
+
+.main-panel-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.panel-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+}
+
+.panel-icon--play {
+  background: url('//vrlab-static.ljcdn.com/release/web/seesay-realsee.0be8653c.png') center/contain no-repeat;
+}
+
+.panel-icon--design {
+  background: url('//vrlab-static.ljcdn.com/release/web/plan-edit-realsee.ecabd40d.png') center/contain no-repeat;
+}

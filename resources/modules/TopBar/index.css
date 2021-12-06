@@ -1,0 +1,81 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent);
+  color: white;
+}
+.topbar-inner {
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+}
+.topbar-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topbar-title {
+  font-weight: 500;
+  transform: translate(-40px);
+  transition: transform 0.45s;
+}
+
+.topbar-btnback {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  transform: scaleX(0);
+  opacity: 0;
+  transition: transform opacity 0.45s;
+}
+
+.topbar-icon--back {
+  background: url(//vrlab-static.ljcdn.com/release/web/back.91bcbfab.png) center/contain no-repeat;
+}
+.topbar--Floorplan .topbar-btnback {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.topbar--Floorplan .topbar-title {
+  transform: translate(0px);
+}
+.topbar-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.45s;
+  cursor: pointer;
+}
+
+.topbar-btn--visible {
+  opacity: 1;
+}
+
+.topbar-icon {
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.topbar-icon--exit {
+  background: url('//vrlab-static.ljcdn.com/release/web/close_s.9a5e12ba.svg') center/contain no-repeat;
+}
+
+.topbar-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
