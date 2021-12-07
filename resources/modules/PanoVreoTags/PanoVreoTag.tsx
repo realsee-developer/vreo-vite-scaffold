@@ -30,7 +30,6 @@ export function PanoVreoTag(props: PanoVeroTagProps) {
     if (left === 0 && top === 0) {
       return
     }
-    console.log('updateState', paused)
     setState({ left, top })
   }
 
