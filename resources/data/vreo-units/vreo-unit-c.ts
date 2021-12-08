@@ -55,10 +55,10 @@ export const vreoUnitC: VreoUnit =
         "data": {
           "effect": "Move",
           "panoIndex": 7,
-          "fov": 60,
+          "fov": 50,
           "mode": "Panorama",
-          "latitude": 0.05930937626053981,
-          "longitude": 5.3232455945723345
+          "latitude": 0.956462546238568,
+          "longitude": 0.24973322117160635
         }
       },
       {
