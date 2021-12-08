@@ -9,8 +9,13 @@ export function TreasureBox() {
     treasurePlugin.load({
       treasures: [
         {
-          id: 'uuid', // 宝箱唯一标识
+          id: '餐桌', // 宝箱唯一标识
           position: { x: 0.2287512636939919, y: 0.7599949836730957, z: -4.91298789515908 },
+          type: 0,
+        },
+        {
+          id: '灶台', // 宝箱唯一标识
+          position: { x: -1.413017058083, y: 0.853471678296, z: -8.691163807665 },
           type: 0,
         },
       ],

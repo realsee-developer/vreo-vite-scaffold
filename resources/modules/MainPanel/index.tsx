@@ -2,6 +2,7 @@ import { observer } from 'mobx-react'
 import classNames from 'classnames'
 import { useVreoAction } from '@realsee/vreo/lib/react'
 import { vreoUnitA } from '../../data/vreo-units/vreo-unit-a'
+// import { vreoUnitC } from '../../data/vreo-units/vreo-unit-c'
 
 import { MainPanelStore } from '../../stores/MainPanelStore'
 
