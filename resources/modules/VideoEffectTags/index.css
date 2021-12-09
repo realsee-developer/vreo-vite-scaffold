@@ -1,0 +1,29 @@
+.VideoEffectTag {
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.VideoEffectTag-txt {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: all;
+  color: white;
+}
+
+.VideoEffectTag-video {
+  height: 100%;
+}
+
+.VideoEffectTag-txt--inner {
+  transform: translate(-50%, -50%);
+}

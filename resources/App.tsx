@@ -4,6 +4,7 @@ import { StoresProvider } from './stores'
 import { MainPanel } from './modules/MainPanel'
 import { TreasureBox } from './modules/TreasureBox'
 import { PanoVreoTags } from './modules/PanoVreoTags'
+import { VideoEffectTags } from './modules/VideoEffectTags'
 import { PanoFloorplanRadar } from './modules/PanoFloorplanRadar'
 
 export function App() {
@@ -14,6 +15,7 @@ export function App() {
       <PanoFloorplanRadar />
       <PanoVreoTags />
       <TreasureBox />
+      <VideoEffectTags />
     </StoresProvider>
   )
 }

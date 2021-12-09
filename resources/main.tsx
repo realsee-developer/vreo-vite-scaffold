@@ -6,6 +6,7 @@ import { VreoProvider } from '@realsee/vreo/lib/react'
 import { FiveInitArgs, parseWork } from '@realsee/five'
 import { createFiveProvider } from '@realsee/five/react'
 import TreasurePlugin from '@realsee/dnalogel/plugins/TreasurePlugin'
+import CameraMovementPlugin from '@realsee/dnalogel/plugins/CameraMovementPlugin'
 import PanoFloorplanRadarPlugin from '@realsee/dnalogel/plugins/floorplan/PanoFloorplanRadarPlugin'
 
 import { App } from './App'
@@ -21,6 +22,7 @@ const defaultInitArgs: FiveInitArgs = {
   antialias: false,
   model: {},
   plugins: [
+    [CameraMovementPlugin, 'cameraMovementPlugin', {}],
     [TreasurePlugin, 'treasurePlugin'],
     [PanoFloorplanRadarPlugin, 'panoFloorplanRadar', {}],
   ],

@@ -36,7 +36,7 @@ export const vreoUnitC: VreoUnit =
         "end": 12200,
         "parsed": false,
         "data": {
-          "videoSrc": "http://vrlab-public.ljcdn.com/release/seesay/tools/fridge6snew___7feaf5b4b3ff7622ee5c398e66d0b3dc.mp4",
+          "videoSrc": "//vrlab-public.ljcdn.com/release/seesay/tools/fridge6snew___7feaf5b4b3ff7622ee5c398e66d0b3dc.mp4",
           "panoIndex": 7,
           "direction": {
             "x": 0,
