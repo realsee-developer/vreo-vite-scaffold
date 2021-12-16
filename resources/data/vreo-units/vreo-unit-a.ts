@@ -25,45 +25,45 @@ export const vreoUnitA: VreoUnit =
         }
       },
       // 动线效果
-      {
-        "uuid": "cbd4326c-3cb1-411e-348a-55a6fa42d6d0",
-        "type": "PanoEffect",
-        "start": 3578,
-        "end": 25939,
-        "parsed": false,
-        "data": {
-          "twoVertexs": [
-            {
-              "x": -3.216338116298317,
-              "y": 1.221307932920801,
-              "z": -3.991326093673706
-            },
-            {
-              "x": -3.178751302976147,
-              "y": 0.09148991767376025,
-              "z": -3.991326093673706
-            }
-          ],
-          "effect": "Distance"
-        }
-      },
-      {
-        "uuid": "f8c115dc-eaba-41c3-bf17-913cff2ae90b",
-        "type": "PanoTag",
-        "start": 5529,
-        "end": 6939,
-        "parsed": false,
-        "data": {
-          "text": "可爱的小猫猫",
-          "vertex": {
-            "x": -4.772462449445111,
-            "y": 1.0707936469281911,
-            "z": -3.672135203740606
-          },
-          "type": "Image",
-          "imgUrl": "//vrlab-public.ljcdn.com/release/seesay/tools/cat_run___92807913661bbb40d0bb9a801b582a07.gif"
-        }
-      },
+      // {
+      //   "uuid": "cbd4326c-3cb1-411e-348a-55a6fa42d6d0",
+      //   "type": "PanoEffect",
+      //   "start": 3578,
+      //   "end": 25939,
+      //   "parsed": false,
+      //   "data": {
+      //     "twoVertexs": [
+      //       {
+      //         "x": -3.216338116298317,
+      //         "y": 1.221307932920801,
+      //         "z": -3.991326093673706
+      //       },
+      //       {
+      //         "x": -3.178751302976147,
+      //         "y": 0.09148991767376025,
+      //         "z": -3.991326093673706
+      //       }
+      //     ],
+      //     "effect": "Distance"
+      //   }
+      // },
+      // {
+      //   "uuid": "f8c115dc-eaba-41c3-bf17-913cff2ae90b",
+      //   "type": "PanoTag",
+      //   "start": 5529,
+      //   "end": 6939,
+      //   "parsed": false,
+      //   "data": {
+      //     "text": "可爱的小猫猫",
+      //     "vertex": {
+      //       "x": -4.772462449445111,
+      //       "y": 1.0707936469281911,
+      //       "z": -3.672135203740606
+      //     },
+      //     "type": "Image",
+      //     "imgUrl": "//vrlab-public.ljcdn.com/release/seesay/tools/cat_run___92807913661bbb40d0bb9a801b582a07.gif"
+      //   }
+      // },
       {
         "uuid": "94a3e6c6-096c-46b6-9713-5f635f679a04",
         "type": "InfoPanel",
