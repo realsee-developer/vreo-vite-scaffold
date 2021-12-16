@@ -2,7 +2,7 @@ import * as React from 'react'
 import classNames from 'classnames'
 import { useFiveEventCallback, useFiveProject2d, useFiveState } from '@realsee/five/react'
 
-import { VreoUnit } from '@realsee/vreo/lib/typings/VreoUnit'
+import { VreoKeyframeEnum, VreoUnit } from '@realsee/vreo/lib/typings/VreoUnit'
 import { Vector3 } from 'three'
 import { useVreoAction, useVreoEventCallback, useVreoPausedState } from '@realsee/vreo/lib/react'
 import { useStoresContext } from '../../stores'
@@ -19,7 +19,7 @@ export function PanoVreoTag(props: PanoVeroTagProps) {
   const [paused, setPaused] = React.useState(true)
   const project2d = useFiveProject2d()
   const stores = useStoresContext()
-  const { load, show } = useVreoAction()
+  const { load, show, pause, hide } = useVreoAction()
   const [state, setState] = React.useState<{ left: number; top: number } | null>(null)
 
   const updateState = () => {
@@ -38,6 +38,12 @@ export function PanoVreoTag(props: PanoVeroTagProps) {
 
   useVreoEventCallback('paused', () => setPaused(true))
   useVreoEventCallback('playing', () => setPaused(false))
+
+  useVreoEventCallback(VreoKeyframeEnum.Exit, () => {
+    pause()
+    hide()
+    stores.mainPanelStore.setVisible(true)
+  })
 
   return (
     <div

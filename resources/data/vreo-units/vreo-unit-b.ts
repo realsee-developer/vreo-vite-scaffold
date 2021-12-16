@@ -138,6 +138,14 @@ export const vreoUnitB: VreoUnit = {
         "vertex": { "x": -0.9753990782354569, "y": 0.7787579222747523, "z": -3.5962710380554204 },
         "type": "Text"
       }
+    },
+    {
+      "uuid": "637e0312-552b-498b-c5a4-6b902cc872fc",
+      "type": "Exit",
+      "start": 26200,
+      "end": 29200,
+      "parsed": false,
+      "data": {}
     }
   ]
 } as VreoUnit

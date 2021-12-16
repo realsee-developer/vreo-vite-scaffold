@@ -10,7 +10,8 @@ import CameraMovementPlugin from '@realsee/dnalogel/plugins/CameraMovementPlugin
 import PanoFloorplanRadarPlugin from '@realsee/dnalogel/plugins/floorplan/PanoFloorplanRadarPlugin'
 
 import { App } from './App'
-import { work } from './data/work/znRoyv06SZQeqA7m'
+// import { work } from './data/work/znRoyv06SZQeqA7m'
+import { work } from './data/work/zxMawr9raSg8LYjG'
 
 import './index.css'
 import { ResponsiveFullScreenFiveCanvas } from './components/ResponsiveFullScreenFiveCanvas'

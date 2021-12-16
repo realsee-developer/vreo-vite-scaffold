@@ -675,6 +675,14 @@ export const vreoUnitA: VreoUnit =
         "data": {
           "text": "希望您喜欢这套美的智慧家庭解决方案，再见"
         }
+      },
+      {
+        "uuid": "637e0312-552b-498b-c5a4-6b902cc872fc",
+        "type": "Exit",
+        "start": 80000,
+        "end": 82525,
+        "parsed": false,
+        "data": {}
       }
     ]
   } as VreoUnit

@@ -112,6 +112,7 @@ function VideoEffectTag(props: VideoEffectTagProps) {
         }}
         ref={ref}
         className="VideoEffectTag-video"
+        playsInline
         src={props.url}
       ></video>
     </div>
