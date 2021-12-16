@@ -64,17 +64,17 @@ export const vreoUnitA: VreoUnit =
       //     "imgUrl": "//vrlab-public.ljcdn.com/release/seesay/tools/cat_run___92807913661bbb40d0bb9a801b582a07.gif"
       //   }
       // },
-      {
-        "uuid": "94a3e6c6-096c-46b6-9713-5f635f679a04",
-        "type": "InfoPanel",
-        "start": 3783,
-        "end": 6700,
-        "parsed": false,
-        "data": {
-          "url": "//vrlab-public.ljcdn.com/release/seesay/tools/cat_music___f68fb9bbe1f7cd6d00a16456dd0b09ad.gif",
-          "type": "Image"
-        }
-      },
+      // {
+      //   "uuid": "94a3e6c6-096c-46b6-9713-5f635f679a04",
+      //   "type": "InfoPanel",
+      //   "start": 3783,
+      //   "end": 6700,
+      //   "parsed": false,
+      //   "data": {
+      //     "url": "//vrlab-public.ljcdn.com/release/seesay/tools/cat_music___f68fb9bbe1f7cd6d00a16456dd0b09ad.gif",
+      //     "type": "Image"
+      //   }
+      // },
 
       {
         "uuid": "e3a3d9fe-9ae7-43e0-f0e2-bedd35aa2d19",
