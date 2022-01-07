@@ -38,7 +38,7 @@ function VideoEffectTag(props: VideoEffectTagProps) {
   const [visible, setVisible] = React.useState(false)
   const [fiveState] = useFiveState()
   const fiveProject2d = useFiveProject2d()
-  const [pos, setPos] = React.useState<[number, number]>([0, 0])
+  const [pos, setPos] = React.useState<[number, number] | null>(null)
 
   const treasurePlugin = useFivePlugin<typeof TreasurePlugin>('treasurePlugin')
   const cameraMovementPlugin = useFivePlugin<typeof CameraMovementPlugin>('cameraMovementPlugin')
@@ -90,20 +90,23 @@ function VideoEffectTag(props: VideoEffectTagProps) {
     ref.current?.addEventListener('ended', callback)
   }
 
+  const textStyle = (() => {
+    if (!pos) {
+      return { display: 'none' }
+    }
+    return {
+      WebkitTransform: `translate3d(${pos[0] + 'px'},${pos[1] + 'px'}, 0px)`,
+      transform: `translate3d(${pos[0] + 'px'},${pos[1] + 'px'}, 0px)`,
+      display: !visible ? 'block' : 'none',
+    }
+  })()
+
   return (
     <div
       className="VideoEffectTag"
-      style={{ display: fiveState.panoIndex === props.startframe.panoIndex ? 'flex' : 'none' }}
+      style={{ display: fiveState.panoIndex === props.startframe.panoIndex && pos ? 'flex' : 'none' }}
     >
-      <div
-        onClick={onClick}
-        className="VideoEffectTag-txt"
-        style={{
-          WebkitTransform: `translate3d(${pos[0] + 'px'},${pos[1] + 'px'}, 0px)`,
-          transform: `translate3d(${pos[0] + 'px'},${pos[1] + 'px'}, 0px)`,
-          display: !visible ? 'block' : 'none',
-        }}
-      >
+      <div onClick={onClick} className="VideoEffectTag-txt" style={textStyle}>
         <div className="VideoEffectTag-txt--inner">{props.text}</div>
       </div>
       <video
