@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="//realsee.com/favicon.ico" type="image/x-icon" rel="icon" />
     <title>智能语音导览 -- 如视开发脚手架 --</title>
+    <script>
+      // 兼容某些低端设备/WebView 无 globalThis 情况。
+      !(function (t) {
+        function e() {
+          var e = this || self
+          ;(e.globalThis = e), delete t.prototype._T_
+        }
+        'object' != typeof globalThis &&
+          (this ? e() : (t.defineProperty(t.prototype, '_T_', { configurable: !0, get: e }), _T_))
+      })(Object)
+    </script>
   </head>
   <body>
     <div id="root"></div>
