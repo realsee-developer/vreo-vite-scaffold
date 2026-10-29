@@ -1,7 +1,7 @@
 {
   "name": "@realsee/vreo-vite-scaffold",
   "version": "0.0.0",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "PUBLIC_URL='.' tsc && vite build",

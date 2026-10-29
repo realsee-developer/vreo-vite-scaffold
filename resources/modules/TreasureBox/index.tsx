@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 import * as React from 'react'
 import TreasurePlugin from '@realsee/dnalogel/plugins/TreasurePlugin'
 import { useFivePlugin } from '@realsee/dnalogel/shared-utils/five/useFivePlugin'

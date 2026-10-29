@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 import { observer } from 'mobx-react'
 import classNames from 'classnames'
 import { useVreoAction } from '@realsee/vreo/lib/react'

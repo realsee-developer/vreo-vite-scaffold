@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 import * as React from 'react'
 import { TopBar } from './modules/TopBar'
 import { StoresProvider } from './stores'
